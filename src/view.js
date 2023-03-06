@@ -42,3 +42,5 @@ if (isDocumentLoaded()) {
 } else {
 	window.addEventListener("load", configureSliders);
 }
+
+console.log("lol?");

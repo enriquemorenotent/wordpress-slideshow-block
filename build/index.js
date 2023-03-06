@@ -191,7 +191,7 @@ const Edit = _ref2 => {
   } = attributes;
   const handleAddSlide = () => setAttributes({
     slides: [...slides, createSlide({
-      title: "New slide",
+      title: "New slide!",
       content: "Describe this slide",
       image: undefined
     })]
