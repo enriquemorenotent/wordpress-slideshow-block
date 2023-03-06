@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "foo/foo-slideshow",
+  "version": "0.1.0",
+  "title": "Foo Slideshow",
+  "category": "media",
+  "icon": "smiley",
+  "description": "This is a slideshow for foo",
+  "supports": {
+    "html": false,
+    "align": true
+  },
+  "textdomain": "foo-slideshow",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php",
+  "attributes": {
+    "slides": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

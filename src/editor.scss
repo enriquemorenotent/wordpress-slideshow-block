@@ -1,0 +1,45 @@
+.wp-block-foo-foo-slideshow {
+	background-color: #eeeeee;
+	// A box shadow that makes it feel very elevated
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.52), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+	.block-name {
+		text-align: center;
+	}
+
+	.slide {
+		position: relative;
+		background-color: #fff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+		.slide__content {
+			padding: 20px;
+		}
+
+		.button-remove-image {
+			background-color: #fff;
+			position: absolute;
+			display: none;
+			top: 40%;
+			left: 40%;
+		}
+
+		&:hover {
+			.button-remove-image {
+				display: block;
+			}
+		}
+	}
+
+	.right-side {
+		position: relative;
+	}
+
+	.buttons {
+		text-align: right;
+
+		button {
+			margin-left: 10px;
+		}
+	}
+}
