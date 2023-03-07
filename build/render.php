@@ -2,7 +2,7 @@
 <div <?= get_block_wrapper_attributes() ?>>
 
     <?php if (!empty($slides)): ?>
-        <div class="emt-slideshow">
+        <div class="slideshow">
             <button class="arrow arrow-previous">Previous</button>
             <button class="arrow arrow-next">Next</button>
 
@@ -18,8 +18,8 @@
                 <div class="slide <?= $index === 0 ? 'active' : '' ?>">
                     <div class="left-side">
                         <div class="content">
-                            <h4 class="emt-slide-title"><?= $index ?> <?= $title ?></h4>
-                            <div class="emt-slide-content"><?= $content ?></div>
+                            <h4 class="slide-title"><?= $index ?> <?= $title ?></h4>
+                            <div class="slide-content"><?= $content ?></div>
                         </div>
                     </div>
                     <div class="right-side">
