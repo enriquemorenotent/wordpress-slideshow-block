@@ -13,7 +13,7 @@ const Slide = ({ data, onDelete, onUpdate, onMoveUp, onMoveDown }) => {
 						tagName="h4"
 						value={title}
 						onChange={(title) => onUpdate({ ...data, title })}
-						placeholder={__("Slide title", "foo-slideshow")}
+						placeholder={__("Slide title", "emt-slideshow")}
 						size="small"
 						allowedFormats={[]}
 					/>
@@ -21,7 +21,7 @@ const Slide = ({ data, onDelete, onUpdate, onMoveUp, onMoveDown }) => {
 					<RichText
 						value={content}
 						onChange={(content) => onUpdate({ ...data, content })}
-						placeholder={__("Slide content", "foo-slideshow")}
+						placeholder={__("Slide content", "emt-slideshow")}
 						allowedFormats={[
 							"core/bold",
 							"core/italic",
@@ -76,7 +76,7 @@ const Slide = ({ data, onDelete, onUpdate, onMoveUp, onMoveDown }) => {
 							isDestructive
 							onClick={() => onUpdate({ ...data, image: undefined })}
 						>
-							{__("Remove image", "foo-slideshow")}
+							{__("Remove image", "emt-slideshow")}
 						</Button>
 					</>
 				)}

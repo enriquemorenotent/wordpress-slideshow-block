@@ -1,17 +1,17 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "foo/foo-slideshow",
-  "version": "0.1.0",
-  "title": "Foo Slideshow",
+  "name": "emt/emt-slideshow",
+  "version": "1.0",
+  "title": "EMT Slideshow",
   "category": "media",
   "icon": "smiley",
-  "description": "This is a slideshow for foo",
+  "description": "This is a slideshow",
   "supports": {
     "html": false,
     "align": true
   },
-  "textdomain": "foo-slideshow",
+  "textdomain": "emt-slideshow",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",

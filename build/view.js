@@ -23,7 +23,7 @@ const configureSlider = slideshow => {
   nextButton.addEventListener("click", handleNextClick);
 };
 const configureSliders = () => {
-  const slideshows = document.querySelectorAll(".wp-block-foo-foo-slideshow");
+  const slideshows = document.querySelectorAll(".wp-block-emt-slideshow");
   console.log("Found", slideshows.length, "slideshows");
   slideshows.forEach(configureSlider);
 };

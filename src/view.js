@@ -28,7 +28,7 @@ const configureSlider = (slideshow) => {
 };
 
 const configureSliders = () => {
-	const slideshows = document.querySelectorAll(".wp-block-foo-foo-slideshow");
+	const slideshows = document.querySelectorAll(".wp-block-emt-slideshow");
 
 	console.log("Found", slideshows.length, "slideshows");
 

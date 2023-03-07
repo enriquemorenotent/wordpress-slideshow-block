@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       Foo Slideshow
- * Description:       This is a slideshow for foo
+ * Plugin Name:       EMT Slideshow
+ * Description:       This is a slideshow
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Version:           1.0
+ * Author:            Enrique Moreno Tent
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       foo-slideshow
+ * Text Domain:       emt-slideshow
  *
- * @package           foo
+ * @package           emt
  */
 
 /**
@@ -20,7 +20,8 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function foo_foo_slideshow_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function emt_slideshow_block_init()
+{
+    register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'foo_foo_slideshow_block_init' );
+add_action('init', 'emt_slideshow_block_init');

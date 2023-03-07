@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 const NoSlidesWarning = () => {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "no-slides"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("No slides found", "foo-slideshow")));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("No slides found", "emt-slideshow")));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NoSlidesWarning);
 
@@ -75,7 +75,7 @@ const Slide = _ref => {
       ...data,
       title
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Slide title", "foo-slideshow"),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Slide title", "emt-slideshow"),
     size: "small",
     allowedFormats: []
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
@@ -84,7 +84,7 @@ const Slide = _ref => {
       ...data,
       content
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Slide content", "foo-slideshow"),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Slide content", "emt-slideshow"),
     allowedFormats: ["core/bold", "core/italic", "core/link", "core/strikethrough", "core/underline"]
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "buttons p-20"
@@ -132,7 +132,7 @@ const Slide = _ref => {
       ...data,
       image: undefined
     })
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Remove image", "foo-slideshow")))));
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Remove image", "emt-slideshow")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Slide);
 
@@ -227,7 +227,7 @@ const Edit = _ref2 => {
     slides: slides.map((s, i) => i === index ? slide : s)
   });
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", blockProps, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "foo-slideshow"
+    className: "emt-slideshow"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "block-name"
   }, "Pill slideshow"), slides.length === 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_NoSlidesWarning__WEBPACK_IMPORTED_MODULE_6__["default"], null), slides.map((slide, index) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_Slide__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -245,13 +245,13 @@ const Edit = _ref2 => {
     onClick: () => handleAddSlide({
       title: "New slide"
     })
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Add slide", "foo-slideshow")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Add slide", "emt-slideshow")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
     className: "button-delete-slides",
     isDestructive: true,
     onClick: () => setAttributes({
       slides: []
     })
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Delete all slides", "foo-slideshow")))));
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Delete all slides", "emt-slideshow")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Edit);
 
@@ -385,7 +385,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"foo/foo-slideshow","version":"0.1.0","title":"Foo Slideshow","category":"media","icon":"smiley","description":"This is a slideshow for foo","supports":{"html":false,"align":true},"textdomain":"foo-slideshow","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php","attributes":{"slides":{"type":"array","default":[]}}}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"emt/emt-slideshow","version":"1.0","title":"EMT Slideshow","category":"media","icon":"smiley","description":"This is a slideshow","supports":{"html":false,"align":true},"textdomain":"emt-slideshow","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php","attributes":{"slides":{"type":"array","default":[]}}}');
 
 /***/ })
 
@@ -540,7 +540,7 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkfoo_slideshow"] = globalThis["webpackChunkfoo_slideshow"] || [];
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkemt_slideshow"] = globalThis["webpackChunkemt_slideshow"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

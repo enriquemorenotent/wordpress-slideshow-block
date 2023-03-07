@@ -64,7 +64,7 @@ const Edit = ({ attributes, setAttributes }) => {
 
 	return (
 		<div {...blockProps}>
-			<div className="foo-slideshow">
+			<div className="emt-slideshow">
 				<h3 className="block-name">Pill slideshow</h3>
 				{slides.length === 0 && <NoSlidesWarning />}
 				{slides.map((slide, index) => (
@@ -84,7 +84,7 @@ const Edit = ({ attributes, setAttributes }) => {
 						isPrimary
 						onClick={() => handleAddSlide({ title: "New slide" })}
 					>
-						{__("Add slide", "foo-slideshow")}
+						{__("Add slide", "emt-slideshow")}
 					</Button>
 
 					{/* A button to destroy all slides */}
@@ -93,7 +93,7 @@ const Edit = ({ attributes, setAttributes }) => {
 						isDestructive
 						onClick={() => setAttributes({ slides: [] })}
 					>
-						{__("Delete all slides", "foo-slideshow")}
+						{__("Delete all slides", "emt-slideshow")}
 					</Button>
 				</div>
 			</div>
