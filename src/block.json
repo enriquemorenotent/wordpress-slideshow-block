@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "emt/emt-slideshow",
+	"name": "emt/slideshow-block",
 	"version": "1.0",
 	"title": "EMT Slideshow",
 	"category": "media",
